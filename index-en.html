@@ -1002,7 +1002,7 @@
 @media (max-width: 560px){
   header{ backdrop-filter: blur(8px); }
   .nav{ height: 64px; }
-  .brand img{ height: 28px; }
+  .brand-logo{ height: 28px; }
   .navcta .btn-primary{ padding: 10px 14px; font-size: 13px; }
   .burger{ width: 42px; height: 42px; }
   .hero .container{ padding-top: 78px; padding-bottom: 52px; }
@@ -1031,6 +1031,31 @@
   .about-media{ height: 220px; }
   .about-cards{ grid-template-columns: 1fr; gap: 12px; }
   .about-card{ padding: 14px; }
+}
+
+
+/* ===== Extra mobile optimization ===== */
+@media (max-width: 860px){
+  .nav{ min-height: 64px; }
+  .navcta{ gap: 8px; }
+  .lang-switch{ gap: 6px; }
+  .lang-link{ min-width: 42px; padding: 9px 12px; font-size: 13px; }
+  .navcta .btn-primary{ display:none; }
+  .mobilemenu{ background: inherit; }
+}
+
+@media (max-width: 560px){
+  .container{ padding: 0 14px; }
+  .hero-grid{ gap: 18px; }
+  .hero-card{ border-radius: 20px; }
+  .pill{ font-size: 11px; padding: 7px 10px; }
+  .about-lead, .about-card, .why-item, .buy-card, .edu-card, .life-card{ border-radius: 18px; }
+  .slider{ gap: 10px; }
+  .track{ grid-auto-columns: 92%; padding-bottom: 10px; }
+  .modal-backdrop, .age-backdrop{ padding: 12px; }
+  .modal, .age-modal{ border-radius: 18px; }
+  .modal-close{ width: 40px; height: 40px; top: 10px; right: 10px; }
+  .age-actions .btn{ flex-basis: 100%; }
 }
 
 </style>
